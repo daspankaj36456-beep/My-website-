@@ -5,50 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: #f4f4f9;
+            color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px;
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            padding: 50px 20px;
             text-align: center;
         }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
         nav {
-            background: #444;
-            padding: 10px;
+            background: #023e8a;
+            padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
         }
         nav a {
             color: #fff;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #90e0ef;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .card {
+            background: white;
             padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card a {
+            color: #0077b6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
         }
         footer {
-            background: #333;
-            color: #fff;
+            background: #023e8a;
+            color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>This is my personal website for my Computer Science class assignment.</p>
+        <h1>Hello, I'm <span style="color:#90e0ef;">Your Name</span></h1>
+        <p>“Dream big, work hard, and make it happen.”</p> <!-- ✨ Tagline here -->
     </header>
 
     <nav>
@@ -61,39 +97,49 @@
 
     <section id="home">
         <h2>Home</h2>
-        <p>Hi! Welcome to my personal website. Here you will find details about me, my projects, class notes, and program codes.</p>
+        <div class="card">
+            <p>Welcome to my personal website! This site contains information about me, my program codes, and class notes for my Computer Science journey. 🚀</p>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p><strong>Name:</strong> Your Name</p>
-        <p><strong>Background:</strong> B.Sc. Computer Science student at PDUAM, Amjonga under Guwahati University.</p>
-        <p><strong>Skills:</strong> C programming, problem-solving, MS Office, basic web development.</p>
-        <p><strong>Hobbies:</strong> Chess, Coding, Learning new technologies.</p>
-        <p><strong>Career Goals:</strong> To become a software developer and IT professional.</p>
+        <div class="card">
+            <p><strong>Name:</strong> Your Name</p>
+            <p><strong>Background:</strong> B.Sc. Computer Science student at PDUAM, Amjonga under Gauhati University.</p>
+            <p><strong>Skills:</strong> C programming, problem-solving, MS Office, basic web development.</p>
+            <p><strong>Hobbies:</strong> Chess ♟, Coding 💻, Learning new technologies 📚.</p>
+            <p><strong>Career Goals:</strong> To become a software developer and IT professional.</p>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <div class="card">
+            <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
     </section>
 
     <section id="programs">
         <h2>Programs Repository</h2>
-        <p>Click below to access my programming codes (Data Structures, OOP, etc.):</p>
-        <p><a href="https://drive.google.com/yourfolderlink" target="_blank">My Program Codes</a></p>
+        <div class="card">
+            <p>Click below to access my programming codes (Data Structures, OOP, etc.):</p>
+            <p><a href="https://drive.google.com/yourfolderlink" target="_blank">📂 My Program Codes</a></p>
+        </div>
     </section>
 
     <section id="notes">
         <h2>Class Notes</h2>
-        <p>Click below to access my class notes for this semester:</p>
-        <p><a href="https://drive.google.com/yourfolderlink" target="_blank">My Class Notes</a></p>
+        <div class="card">
+            <p>Click below to access my class notes for this semester:</p>
+            <p><a href="https://drive.google.com/yourfolderlink" target="_blank">📘 My Class Notes</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 Your Name | My Personal Website</p>
+        <p>© 2025 Your Name | Designed with ❤️ for my Computer Science class</p>
     </footer>
 
 </body>
